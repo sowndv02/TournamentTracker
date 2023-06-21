@@ -18,7 +18,7 @@ namespace TrackerLibrary.Models
 
         public void CompleteTournament()
         {
-            OnTournamentComplete> ?.Invoke(this, DateTime.Now);
+            OnTournamentComplete?.Invoke(this, DateTime.Now);
         }
     }
 }
