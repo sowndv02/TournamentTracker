@@ -33,7 +33,7 @@ namespace TrackerLibrary
             mail.Body = body;
             mail.IsBodyHtml = true; 
 
-            SmtpClient smtpClient = new SmtpClient(); 
+            SmtpClient smtpClient = new SmtpClient("localhost", 25); 
             
             smtpClient.Send(mail);
        }

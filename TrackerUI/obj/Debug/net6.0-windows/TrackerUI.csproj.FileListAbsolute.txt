@@ -40,3 +40,4 @@ D:\Learning\Semester5\PRN211\Project\TournamentTracker\TrackerUI\bin\Debug\net6.
 D:\Learning\Semester5\PRN211\Project\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 D:\Learning\Semester5\PRN211\Project\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Learning\Semester5\PRN211\Project\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Learning\Semester5\PRN211\Project\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\App.config

@@ -101,7 +101,7 @@ namespace TrackerLibrary
                 sb.AppendLine("~Tournament Tracker");
             }
             to= p.EmailAddress;
-            EmailLogic.SendEmail(to, subject, body);
+            EmailLogic.SendEmail(to, subject, sb.ToString());
         }
 
         private static int CheckCurrentRound(this TournamentModel model)
@@ -195,7 +195,7 @@ namespace TrackerLibrary
             }
             else
             {
-                output = Decimal.Multiply(totalIncome * Convert.ToDecimal(prize.PrizePercentage / 100));
+                output = Decimal.Multiply(totalIncome, Convert.ToDecimal(prize.PrizePercentage / 100));
             }
             return output;
         }
