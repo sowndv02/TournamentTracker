@@ -6,25 +6,36 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary.Models
 {
-    public class MatchupEntryModel
+    public class MatchUpEntryModel
     {
-        public int Id { get; set; } 
         /// <summary>
-        /// Represents one team in the matchup
+        /// The unique identifier for the matchup entry.
         /// </summary>
-        public int TeamCompetingId { get; set; }    
-        public TeamModel TeamCompeting { get; set; }
+        public int Id { get; set; }
+
         /// <summary>
-        /// Represent the score for this particular team
+        /// The unique identifier for the team competing.
+        /// </summary>
+        public int TeamCompetingId { get; set; }
+
+        /// <summary>
+        /// One of the teams currently competing in the matchup entry.
+        /// </summary>
+        public TeamModel TeamCompeting { get; set; }
+
+        /// <summary>
+        /// Current score of the team competing.
         /// </summary>
         public double Score { get; set; }
-        /// <summary>
-        /// Represents the matchup that this team came 
-        /// from as the winner
-        /// </summary>
-        
-        public int ParentMatchupId { get; set; } 
-        public MatchupModel ParentMatchup { get; set; }
 
+        /// <summary>
+        /// The unique identifier for the parent matchup (the matchuUpId where the team in this entry came from).
+        /// </summary>
+        public int parentMatchupId { get; set; }
+
+        /// <summary>
+        /// Previous matchup that the teamcompeting was in.
+        /// </summary>
+        public MatchUpModel ParentMatchup { get; set; }
     }
 }

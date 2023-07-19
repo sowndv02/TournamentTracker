@@ -1,41 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Net.Mail;
 
 namespace TrackerLibrary
 {
-    public static class EmailLogic
-    {
+	public static class EmailLogic
+	{
+		public static void SendEmail(string toAddress, string subject, string body)
+		{
+			SendEmail(new List<string> { toAddress }, new List<string>(), subject, body);
+		}
 
-        public static void SendEmail(string to, string subject, string body)
-        {
-            SendEmail(new List<string> { to }, new List<string>(), subject, body);
-        }
+		public static void SendEmail(List<string> toAddresses, List<string> bccAddresses, string subject, string body)
+		{
+			MailAddress fromMailAddress = new MailAddress(GlobalConfig.AppKeyLookup("senderEmail"), GlobalConfig.AppKeyLookup("senderDisplayName"));
 
-       public static void SendEmail(List<string> to,List<string> bcc,string subject, string body)
-       {
-            MailAddress fromAddress = new MailAddress(GlobalConfig.AppKeyLookup("senderEmail")); 
+			MailMessage mail = new MailMessage();
+			foreach (var toAddress in toAddresses)
+			{
+				mail.To.Add(toAddress); 
+			}
+			foreach (var bccAddress in bccAddresses)
+			{
+				mail.To.Add(bccAddress);
+			}
+			mail.From = fromMailAddress;
+			mail.Subject = subject;
+			mail.Body = body;
+			mail.IsBodyHtml = true;
 
-            MailMessage mail = new MailMessage();
-            foreach (string item in to) 
-            {
-                mail.To.Add(item);
-            }
-            foreach (string item in bcc)
-            {
-                mail.Bcc.Add(item);
-            }
-            mail.From = fromAddress;
-            mail.Subject = subject;
-            mail.Body = body;
-            mail.IsBodyHtml = true; 
+			SmtpClient client = new SmtpClient("localhost", 25);
 
-            SmtpClient smtpClient = new SmtpClient("localhost", 25); 
-            
-            smtpClient.Send(mail);
-       }
-    }
+			client.Send(mail);
+		}
+	}
 }

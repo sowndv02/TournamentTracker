@@ -7,16 +7,24 @@ using TrackerLibrary.Models;
 
 namespace TrackerLibrary.DataAccess
 {
-    public interface IDataConnection
+    public interface IDataConnection : IDisposable
     {
-        void CreatePrize(PrizeModel prize);
-        void UpdateMatchup(MatchupModel model);
-        void CreatePerson (PersonModel person);
-        void CreateTeam (TeamModel team);
-        List<TeamModel> GetAll_Team();
-        List<PersonModel> GetPerson_All();
+        void CreatePrize(PrizeModel model);
+
+        void CreatePerson(PersonModel model);
+
+        void CreateTeam(TeamModel model);
+
         void CreateTournament(TournamentModel model);
-        List<TournamentModel> GetTournament_All();
+
+        void UpdateMatchup(MatchUpModel model);
+
         void CompleteTournament(TournamentModel model);
+
+        List<TeamModel> GetTeam_All();
+
+        List<PersonModel> GetPerson_All();
+
+        List<TournamentModel> GetTournament_All();
     }
 }
