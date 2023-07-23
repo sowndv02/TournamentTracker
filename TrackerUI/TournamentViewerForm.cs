@@ -128,7 +128,7 @@ namespace TrackerUI
             string errorMessage = ValidateData();
             if (errorMessage.Length > 0)
             {
-                MessageBox.Show($"Input Error: { errorMessage }");
+                MessageBox.Show($"Input Error: {errorMessage}");
                 return;
             }
 
@@ -203,7 +203,7 @@ namespace TrackerUI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"The application had the following error: {ex.Message }");
+                    MessageBox.Show($"The application had the following error: {ex.Message}");
                     return;
                 }
 

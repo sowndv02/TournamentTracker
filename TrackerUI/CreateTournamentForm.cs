@@ -110,7 +110,7 @@ namespace TrackerUI
             // Validate Data.
             decimal fee = 0;
             bool feeAcceptable = decimal.TryParse(entryFeeValue.Text, out fee);
-            
+
             if (!feeAcceptable || fee < 0)
             {
                 MessageBox.Show("You need to enter a valid Entry Fee.", "Invalid Fee");
