@@ -8,24 +8,29 @@
 ## Database
 
 - Diagram 
-
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20141934.png)
 - Procedure
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20142011.png)
 
 ## UI
 - Create Prize
 
-![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22]
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20142157.png)
 
 - Create Team
-
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20142223.png)
 - Create Tournament
-
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20142240.png)
 - Dashboard
-
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20142259.png)
 - View Tournament
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20142357.png)
+- View Tournament Result
+![screencapture-localhost-14014-Celebrity-List-2022-07-27-13_07_22](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20142450.png)
+
 # Demo 
 
-[![Watch the video]](https://www.youtube.com/embed/bUYA4_HZup0")
+[![Watch the video](https://github.com/sowndv02/TournamentTracker/blob/157c37aee9f5792f009e45f84aaf3ede74c488d2/images/Screenshot%202023-08-03%20143905.png)](https://www.youtube.com/embed/bUYA4_HZup0")
 
 
 # Note
