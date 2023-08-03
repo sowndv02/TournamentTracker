@@ -25,7 +25,8 @@
 - View Tournament
 # Demo 
 
-[![Watch the video](https://www.youtube.com/embed/bUYA4_HZup0")
+[![Watch the video]](https://www.youtube.com/embed/bUYA4_HZup0")
+
 
 # Note
 - The tournament matches the number of teams that are multiples of 2: 2, 4, 8, 16, 32.....
