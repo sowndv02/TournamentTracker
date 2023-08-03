@@ -1,9 +1,9 @@
 # Tournament Tracker
 
 ## Project Summary:
-    - Tournament Tracker is a Winforms application that allows users to create and play through elimination-style tournaments.
-    - It allows users to create team members, teams, prizes, and then proceeds to randomize the rounds and matchups to create a tournament.
-    - Technology used:SQL Database, Text File Storage, Dapper, Linq, Interfaces, Emailing from C#, Custom Events
+- Tournament Tracker is a Winforms application that allows users to create and play through elimination-style tournaments.
+- It allows users to create team members, teams, prizes, and then proceeds to randomize the rounds and matchups to create a tournament.
+- Technology used:SQL Database, Text File Storage, Dapper, Linq, Interfaces, Emailing from C#, Custom Events
 
 ## Database
 
@@ -25,7 +25,7 @@
 - View Tournament
 # Demo 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bUYA4_HZup0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Watch the video](https://www.youtube.com/embed/bUYA4_HZup0")
 
 # Note
 - The tournament matches the number of teams that are multiples of 2: 2, 4, 8, 16, 32.....
@@ -36,10 +36,6 @@
 - Scores are stored or the winning team has a score of 1 and the losing team has a score of 0
 - The data is stored in the database and backed up by a csv file
 - Emails are sent to the winning team and the team with the schedule
-
-## Authors
-
-- [@sowndv02](https://github.com/sowndv02)
 
 ## Contributing
 
